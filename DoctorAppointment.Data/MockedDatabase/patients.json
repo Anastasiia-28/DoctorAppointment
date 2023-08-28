@@ -1,0 +1,38 @@
+[
+  {
+    "IllnessType": 4,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "An",
+    "Surname": "Sh",
+    "Phone": null,
+    "Email": null,
+    "Id": 1,
+    "CreatedAt": "2023-08-28T19:28:24.6555982+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "IllnessType": 4,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "An",
+    "Surname": "Sh",
+    "Phone": null,
+    "Email": null,
+    "Id": 2,
+    "CreatedAt": "2023-08-28T19:58:08.2377251+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "IllnessType": 4,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "An",
+    "Surname": "Sh",
+    "Phone": null,
+    "Email": null,
+    "Id": 3,
+    "CreatedAt": "2023-08-28T19:58:28.470653+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  }
+]
