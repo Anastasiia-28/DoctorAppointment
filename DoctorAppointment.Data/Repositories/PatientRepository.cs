@@ -2,7 +2,6 @@
 using DoctorAppointment.Data.Repositories;
 using DoctorAppointment.Domain.Entities;
 using MyDoctorAppointment.Data.Interfaces;
-using Newtonsoft.Json;
 
 namespace MyDoctorAppointment.Data.Repositories
 {

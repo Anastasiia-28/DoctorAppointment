@@ -1,5 +1,7 @@
 ﻿using DoctorAppointment.Domain.Entities;
+using DoctorAppointment.Service.Extensions;
 using DoctorAppointment.Service.Interfaces;
+using DoctorAppointment.Service.ViewModels;
 using MyDoctorAppointment.Data.Interfaces;
 using MyDoctorAppointment.Data.Repositories;
 
@@ -19,14 +21,18 @@ namespace DoctorAppointment.Service.Services
             return _patientRepository.Create(patient);
         }
 
-        public IEnumerable<Patient> GetAll()
+        public IEnumerable<PatientViewModel> GetAll()
         {
-            return _patientRepository.GetAll();
+            var patients = _patientRepository.GetAll();
+            var patientViewModels = patients.Select(x => x.ConvertTo());
+            return patientViewModels;
         }
 
-        public Patient? Get(int id)
+        public PatientViewModel? Get(int id)
         {
-            return _patientRepository.GetById(id);
+            var patient = _patientRepository.GetById(id);
+            var patientViewModels = patient?.ConvertTo();
+            return patientViewModels;
         }
 
         public bool Delete(int id)

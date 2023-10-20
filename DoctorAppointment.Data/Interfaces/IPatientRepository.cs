@@ -10,14 +10,6 @@ namespace MyDoctorAppointment.Data.Interfaces
 {
     public interface IPatientRepository: IGenericRepository<Patient>
     {
-        //Patient Create(Patient patient);
 
-        //Patient GetById(int id);
-
-        //Patient Update(int id, Patient patient);
-
-        //IEnumerable<Patient> GetAll();
-
-        //bool Delete(int id);
     }
 }

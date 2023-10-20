@@ -1,4 +1,5 @@
 ﻿using DoctorAppointment.Domain.Entities;
+using DoctorAppointment.Service.ViewModels;
 
 namespace DoctorAppointment.Service.Interfaces
 {
@@ -6,8 +7,8 @@ namespace DoctorAppointment.Service.Interfaces
     {
         Doctor Create(Doctor doctor);
 
-        IEnumerable<Doctor> GetAll();
-        Doctor Get(int id);
+        IEnumerable<DoctorViewModel> GetAll();
+        DoctorViewModel Get(int id);
 
         bool Delete(int id);
         Doctor Update(int id, Doctor doctor);

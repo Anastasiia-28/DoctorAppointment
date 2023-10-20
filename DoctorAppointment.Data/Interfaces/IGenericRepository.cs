@@ -2,7 +2,7 @@
 
 namespace DoctorAppointment.Data.Interfaces
 {
-    public interface IGenericRepository<TSource> where TSource : Auditable
+    public interface IGenericRepository<TSource> 
     {
         TSource Create(TSource source);
         TSource? GetById(int id);

@@ -2,7 +2,7 @@
 using DoctorAppointment.Domain.Enums;
 using DoctorAppointment.Service.Interfaces;
 using DoctorAppointment.Service.Services;
-using System.IO;
+
 
 namespace MyDoctorAppointment
 {
@@ -38,7 +38,7 @@ namespace MyDoctorAppointment
                 Name = "Di",
                 Surname = "Gu",
                 Experience = 20,
-                DoctorType = DoctorTypes.Dentist
+                DoctorType = DoctorTypes.Dermatologist
             };
             _doctorService.Create(newDoctor);
 
@@ -48,6 +48,7 @@ namespace MyDoctorAppointment
             foreach (var doc in docs)
             {
                 Console.WriteLine(doc.Name);
+                Console.WriteLine(doc.DoctorType);
             }
 
 
@@ -58,6 +59,7 @@ namespace MyDoctorAppointment
             foreach (var pat in pats)
             {
                 Console.WriteLine(pat.Name);
+                Console.WriteLine(pat.IllnessType);
             }
 
             Console.WriteLine("Adding patient: ");
@@ -67,6 +69,7 @@ namespace MyDoctorAppointment
                 Name = "An",
                 Surname = "Sh",
                 IllnessType = IllnessTypes.SkinDisease
+                
             };
 
             _patientService.Create(newPatient);
@@ -77,6 +80,7 @@ namespace MyDoctorAppointment
             foreach (var pat in pats)
             {
                 Console.WriteLine(pat.Name);
+                Console.WriteLine(pat.IllnessType);
             }
         }
     }

@@ -1,38 +1,26 @@
 [
   {
-    "DoctorType": 1,
+    "DoctorType": 2,
     "Experience": 20,
     "Salary": 0.0,
     "Name": "Di",
     "Surname": "Gu",
     "Phone": null,
     "Email": null,
-    "Id": 13,
-    "CreatedAt": "2023-08-28T19:28:24.6113069+03:00",
+    "Id": 31,
+    "CreatedAt": "2023-10-01T18:36:53.7259942+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
   },
   {
-    "DoctorType": 1,
+    "DoctorType": 2,
     "Experience": 20,
     "Salary": 0.0,
     "Name": "Di",
     "Surname": "Gu",
     "Phone": null,
     "Email": null,
-    "Id": 14,
-    "CreatedAt": "2023-08-28T19:58:08.2047861+03:00",
-    "UpdatedAt": "0001-01-01T00:00:00"
-  },
-  {
-    "DoctorType": 1,
-    "Experience": 20,
-    "Salary": 0.0,
-    "Name": "Di",
-    "Surname": "Gu",
-    "Phone": null,
-    "Email": null,
-    "Id": 15,
-    "CreatedAt": "2023-08-28T19:58:28.443209+03:00",
+    "Id": 32,
+    "CreatedAt": "2023-10-01T18:37:00.3588091+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
   }
 ]

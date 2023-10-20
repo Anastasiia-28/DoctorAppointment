@@ -5,7 +5,6 @@
         EyeDisease = 1,
         Infection,
         DentalDisease,
-        SkinDisease,
-        Ambulance
+        SkinDisease
     }
 }
