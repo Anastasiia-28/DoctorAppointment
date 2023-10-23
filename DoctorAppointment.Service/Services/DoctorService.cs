@@ -7,18 +7,30 @@ using DoctorAppointment.Service.ViewModels;
 
 namespace DoctorAppointment.Service.Services
 {
-    public class DoctorService : IDoctorService
+    public class DoctorService : DoctorRepository, IDoctorService
     {
         private readonly IDoctorRepository _doctorRepository;
-
+        private const string PATH = "F:\\Projects\\DoctorAppointment\\DoctorAppointment\\DoctorAppointment.Data\\MockedDatabase\\doctors.xml";
         public DoctorService()
         {
             _doctorRepository = new DoctorRepository();
         }
 
-        public Doctor Create(Doctor doctor)
+        public Doctor CreateToJson(Doctor doctor)
         {
-            return _doctorRepository.Create(doctor);
+            return _doctorRepository.CreateToJson(doctor);
+        }
+
+        public Doctor CreateToXml(Doctor doctor)
+        {
+            return _doctorRepository.CreateToXml(doctor, PATH);
+        }
+
+        public IEnumerable<DoctorViewModel> GetFromXml()
+        {
+            var doctors = _doctorRepository.GetFromXml(PATH);
+            var doctorViewModels = doctors.Select(x => x.ConvertTo());
+            return doctorViewModels;
         }
 
         public IEnumerable<DoctorViewModel> GetAll()
@@ -44,7 +56,6 @@ namespace DoctorAppointment.Service.Services
         {
             return _doctorRepository.Update(id, doctor);
         }
-
 
     }
 }

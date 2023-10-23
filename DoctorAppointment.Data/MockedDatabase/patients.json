@@ -1,26 +1,3 @@
 [
-  {
-    "IllnessType": 4,
-    "AdditionalInfo": null,
-    "Address": null,
-    "Name": "An",
-    "Surname": "Sh",
-    "Phone": null,
-    "Email": null,
-    "Id": 19,
-    "CreatedAt": "2023-10-01T18:36:53.7789015+03:00",
-    "UpdatedAt": "0001-01-01T00:00:00"
-  },
-  {
-    "IllnessType": 4,
-    "AdditionalInfo": null,
-    "Address": null,
-    "Name": "An",
-    "Surname": "Sh",
-    "Phone": null,
-    "Email": null,
-    "Id": 20,
-    "CreatedAt": "2023-10-01T18:37:00.3896671+03:00",
-    "UpdatedAt": "0001-01-01T00:00:00"
-  }
+
 ]

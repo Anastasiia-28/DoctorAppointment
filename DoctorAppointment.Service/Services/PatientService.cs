@@ -11,16 +11,28 @@ namespace DoctorAppointment.Service.Services
     public class PatientService : IPatientService
     {
         private readonly IPatientRepository _patientRepository;
+        private const string PATH = "F:\\Projects\\DoctorAppointment\\DoctorAppointment\\DoctorAppointment.Data\\MockedDatabase\\patients.xml";
         public PatientService()
         {
             _patientRepository = new PatientRepository();
         }
 
-        public Patient Create(Patient patient)
+        public Patient CreateToJson(Patient patient)
         {
-            return _patientRepository.Create(patient);
+            return _patientRepository.CreateToJson(patient);
         }
 
+        public Patient CreateToXml(Patient patient)
+        {
+            return _patientRepository.CreateToXml(patient, PATH);
+        }
+
+        public IEnumerable<PatientViewModel> GetFromXml()
+        {
+            var patients = _patientRepository.GetFromXml(PATH);
+            var patientViewModels = patients.Select(x => x.ConvertTo());
+            return patientViewModels;
+        }
         public IEnumerable<PatientViewModel> GetAll()
         {
             var patients = _patientRepository.GetAll();

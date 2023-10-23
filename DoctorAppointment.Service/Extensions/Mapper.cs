@@ -21,11 +21,11 @@ namespace DoctorAppointment.Service.Extensions
                 case DoctorTypes.Dermatologist:
                     doctorType = "Dermatologist";
                     break;
-                case DoctorTypes.FamilyDoctor:
-                    doctorType = "FamilyDoctor";
+                case DoctorTypes.Ophthalmologist:
+                    doctorType = "Ophthalmologist";
                     break;
-                case DoctorTypes.Paramedic:
-                    doctorType = "Paramedic";
+                case DoctorTypes.InfectiousDiseaseSpecialist:
+                    doctorType = "Infectious Disease Specialist";
                     break;
                 default:
                     doctorType = "Unknown"; 
@@ -76,7 +76,20 @@ namespace DoctorAppointment.Service.Extensions
                 Surname = patient.Surname,
                 Email = patient.Email,
                 Phone = patient.Phone,
-                IllnessType = illnessType
+                IllnessType = illnessType,
+                AdditionalInfo = patient.AdditionalInfo,
+                Address = patient.Address
+            };
+        }
+        public static AppointmentViewModel ConvertTo(this Appointment appointment)
+        {
+            return new AppointmentViewModel()
+            {
+                Doctor = appointment.Doctor.Name +" " +appointment.Doctor.Surname,
+                Patient = appointment.Patient.Name +" " +appointment.Patient.Surname,
+                DateTimeFrom = appointment.DateTimeFrom,
+                DateTimeTo = appointment.DateTimeTo,
+                Description = appointment.Description
             };
         }
     }

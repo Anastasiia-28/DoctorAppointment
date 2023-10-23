@@ -4,7 +4,9 @@ namespace DoctorAppointment.Data.Interfaces
 {
     public interface IGenericRepository<TSource> 
     {
-        TSource Create(TSource source);
+        TSource CreateToJson(TSource source);
+        TSource CreateToXml(TSource source, string path);
+        List<TSource> GetFromXml(string path);
         TSource? GetById(int id);
         TSource Update(int id, TSource source);
         IEnumerable<TSource> GetAll();

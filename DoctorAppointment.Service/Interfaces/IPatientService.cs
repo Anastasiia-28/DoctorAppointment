@@ -5,7 +5,9 @@ namespace DoctorAppointment.Service.Interfaces
 {
     public interface IPatientService
     {
-        Patient Create(Patient patient);
+        Patient CreateToJson(Patient patient);
+        Patient CreateToXml(Patient patient);
+        IEnumerable<PatientViewModel> GetFromXml();
         IEnumerable<PatientViewModel> GetAll();
         PatientViewModel Get(int id);
         bool Delete(int id);

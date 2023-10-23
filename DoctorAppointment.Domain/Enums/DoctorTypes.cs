@@ -4,7 +4,7 @@
     {
         Dentist = 1,
         Dermatologist,
-        FamilyDoctor,
-        Paramedic
+        Ophthalmologist,
+        InfectiousDiseaseSpecialist
     }
 }

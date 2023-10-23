@@ -1,26 +1,26 @@
 [
   {
     "DoctorType": 2,
-    "Experience": 20,
-    "Salary": 0.0,
-    "Name": "Di",
-    "Surname": "Gu",
-    "Phone": null,
-    "Email": null,
-    "Id": 31,
-    "CreatedAt": "2023-10-01T18:36:53.7259942+03:00",
+    "Experience": 22,
+    "Salary": 222.0,
+    "Name": "jhgfds",
+    "Surname": "jhgfds",
+    "Phone": "2",
+    "Email": "2",
+    "Id": 150,
+    "CreatedAt": "2023-10-23T17:07:13.2850225+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
   },
   {
-    "DoctorType": 2,
-    "Experience": 20,
-    "Salary": 0.0,
-    "Name": "Di",
-    "Surname": "Gu",
-    "Phone": null,
-    "Email": null,
-    "Id": 32,
-    "CreatedAt": "2023-10-01T18:37:00.3588091+03:00",
+    "DoctorType": 0,
+    "Experience": 2,
+    "Salary": 22.0,
+    "Name": "rgrgr",
+    "Surname": "grgrgrg",
+    "Phone": "ggggg",
+    "Email": "ggg",
+    "Id": 151,
+    "CreatedAt": "2023-10-23T17:07:50.8564682+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
   }
 ]
